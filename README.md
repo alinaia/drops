@@ -1,14 +1,18 @@
 INTRODUCTION
+
 This repository contains the following tests:
 Onboarding - goes through the onboarding process.
 Sign Up new user - goes through the sign up process using invalid email, invalid password and valid email and password.
 Sign In - goes through the sign in process with an existing user account then it logs out.
 
+
 REQUIREMENTS
+
 This project requires the following modules:
 Node.js
 Cypress
 cypress-iframe plugin
+
 
 INSTALLATION
 
