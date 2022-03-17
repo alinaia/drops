@@ -1,8 +1,11 @@
 INTRODUCTION
 
 This repository contains the following tests:
+
 Onboarding - goes through the onboarding process.
+
 Sign Up new user - goes through the sign up process using invalid email, invalid password and valid email and password.
+
 Sign In - goes through the sign in process with an existing user account then it logs out.
 
 
@@ -31,6 +34,7 @@ Install cypress-iframe plugin
 
 How to run test
 After cloning the repo locally, go to the project’s folder using the terminal. Run this command: 
+
 npx cypress run - to run headless
 npx cypress open - to run through UI
 (for MAC, replace npx with yarn)
