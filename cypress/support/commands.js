@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+import 'cypress-iframe';
 
 Cypress.Commands.add("LogIn", () => {
     cy.contains('Log in').click({ force: true })
@@ -21,6 +22,7 @@ Cypress.Commands.add("SignUp", () => {
     let email = `drops.test.${newDate}@gmail.com`
     cy.fixture('userData.json').then(function (data) {
         this.data = data;
+        cy.wait(500);
         cy.get('[data-testid=EmaiSignup_Login]').should('be.visible').click();
         cy.get('[data-testid=EmaiSignup_Name]').type(this.data.name)
         cy.get('[data-testid=EmaiSignup_Email]').type(email)
@@ -54,7 +56,6 @@ Cypress.Commands.add("SignUpWithIncorrectFormatPassword", () => {
         cy.get('[data-testid=EmaiSignup_Submit]').click({ force: true })
     })
 })
-
 
 Cypress.Commands.add("LogOutFromProfileSettings", () => {
     cy.get('[data-testid=MenuBarProfile]').click({ force: true });
