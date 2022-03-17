@@ -8,10 +8,10 @@ Sign In - goes through the sign in process with an existing user account then it
 
 REQUIREMENTS
 
-This project requires the following modules:
-Node.js
-Cypress
-cypress-iframe plugin
+This project requires the following:
+- Node.js
+- Cypress
+- cypress-iframe plugin
 
 
 INSTALLATION
@@ -20,6 +20,7 @@ Create package.json file
 - run npm init
 
 Install Node.js - https://nodejs.org/en/download/
+
 Verify the installation of Node.js by runing node -v command.
 
 Install Cypress
