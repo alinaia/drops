@@ -36,5 +36,7 @@ How to run test
 After cloning the repo locally, go to the project’s folder using the terminal. Run this command: 
 
 npx cypress run - to run headless
+
 npx cypress open - to run through UI
+
 (for MAC, replace npx with yarn)
