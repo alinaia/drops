@@ -1,6 +1,4 @@
-cypress.json
 node_modules/
-userData.json
 gitignore
 cypress/videos
 cypress/screenshots
